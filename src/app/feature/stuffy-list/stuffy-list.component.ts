@@ -9,6 +9,7 @@ import { JsonResponse } from 'src/app/model/json-response.class';
   styleUrls: ['./stuffy-list.component.css']
 })
 export class StuffyListComponent implements OnInit {
+  title: string = "Stuffy-List";
   stuffies: Stuffy[] = [];
   jr: JsonResponse;
 

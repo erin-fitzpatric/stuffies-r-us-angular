@@ -1,1 +1,15 @@
-<p>stuffy-list works!</p>
+<h1>{{title}}</h1>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>TYPE</th>
+        <th>COLOR</th>
+        <th>ACTION</th>
+    </tr>
+    <tr *ngFor= "let s of stuffies">
+        <td>{{s.id}}</td>
+        <td>{{s.type}}</td>
+        <td>{{s.color}}</td>
+        <TD>Detail | Edit</TD>
+    </tr>
+</table>

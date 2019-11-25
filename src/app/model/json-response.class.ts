@@ -1,10 +1,10 @@
 export class JsonResponse {
-    data: object;
-    errors: object;
-    meta: object;
+    data: any;
+    errors: any;
+    meta: any;
 
 
-    constructor(data: object, errors: object, meta: object) {
+    constructor(data: any, errors: any, meta: any) {
         this.data = data;
         this.errors = errors;
         this.meta = meta;

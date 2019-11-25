@@ -9,7 +9,6 @@ import { JsonResponse } from '../model/json-response.class';
 export class StuffyService {
   url: string = "http://localhost:8080/stuffies/";
   constructor(private http: HttpClient) { }
-
   list(): Observable<JsonResponse> {
     return this.http.get(this.url) as Observable<JsonResponse>;
   }
